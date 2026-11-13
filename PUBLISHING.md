@@ -22,9 +22,9 @@
 | RootMyS24（98260 集成、KSU late-load） | GPL-3.0 | 提供对应源码、保留声明、衍生作品按 GPL-3.0 发布 |
 | KernelSU | GPL-3.0 | 同上 |
 | Shizuku | Apache-2.0 | 保留 LICENSE / NOTICE |
-| `ksud-e3q-S9280ZCS6DZF2-kdp`（KDP ksud 二进制） | **来源仓库无明确 LICENSE** | **默认保留所有权利，不能直接随 APK 公开分发**；需替换或取得作者授权 |
+| `ksud-e3q-S9280ZCS6DZF2-kdp`（KDP ksud 二进制） | 来源 RMG Payloads 仓库 **Apache-2.0**（已核对 SHA-256） | 保留 Apache-2.0 LICENSE/NOTICE、署名 BuSung-dev/RMG；ksud 为 KernelSU 衍生，需同时满足 KernelSU GPL-3.0 的源码义务；建议等 RMG issue #462 确认资产级授权 |
 
-另外，RootMyS24 的 `FINAL_REPORT.md` 自己也写了：SamTimer 资产里部分 `ksud`（多 KMI KDP）来源仓库无 LICENSE，“仅建议个人设备测试，公开分发需替换或取得授权”。
+RootMyS24 的 `FINAL_REPORT.md` 曾提示 ksud 资产来源不清；现已定位到 RMG Payloads 仓库（Apache-2.0），并在 RMG issue #462 请求资产级确认；在回复前仍建议只发源码、不公开 APK。
 
 **只发布你自己原创的定标数据/脚本/文档**（不包含上面这些代码和二进制）时，法律上不强制你鸣谢；但 CVE 研究署名是社区惯例，建议保留。只要 APK 里还有上面的代码/ksud，就不能靠“删鸣谢”绕过许可证。
 
@@ -37,7 +37,7 @@
 | NanoTurtle1145（RootMyS24 / 98260 研究） | [root-my-s24 Issues](https://github.com/NanoTurtle1145/root-my-s24/issues)（issue #38 已开）、GitHub @NanoTurtle1145、XDA RootMyS24 帖 | ① 能否把 DZJ3 target 合入官方 ② KDP ksud 资产能否授权再分发 |
 | RiosWesley | [RiosWesley/SamTimer Issues](https://github.com/RiosWesley/SamTimer/issues) | APK 壳/UMH 流程的再分发/衍生发布确认 |
 | yoro1836 | [yoro1836/SamTimer Issues](https://github.com/yoro1836/SamTimer/issues) | MIT 代码使用确认（一般不需要额外授权，但可告知） |
-| BuSung-dev（RMG / Payloads） | [Root-My-Galaxy-Payloads Issues](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/issues) | `ksud-e3q-S9280ZCS6DZF2-kdp` 的许可证/再分发授权 |
+| BuSung-dev（RMG / Payloads） | [Root-My-Galaxy-Payloads Issues](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/issues/462) | `ksud` 资产级授权 + KernelSU GPL 源码说明（已发 #462） |
 | XDA 原帖作者 | XDA 私信/回帖（fntz1 等，见 SamTimer 帖） | 同上 |
 
 ### 建议的 issue 模板（可直接改）
@@ -68,7 +68,7 @@ I will keep full attribution and follow the project's license.
 - 作者合入后由官方发布，你不需要自己发 APK。
 
 **C. 一定要发 APK**
-- 取得 ksud 授权，或换成有明确 GPL 许可的官方 KernelSU KDP 构建；
+- 保留 RMG Apache-2.0 NOTICE、KernelSU GPL-3.0 来源说明；建议等 RMG #462 回复确认；
 - 用 **release keystore** 签名，不要用 debug；
 - 只保留 **SM-S9280 CHC DZJ3** 校验（v3.1 已做）；
 - 发布页写清楚风险/恢复方式/SHA-256/鸣谢；不要宣称官方或 KNOX 绝对安全。
@@ -78,4 +78,4 @@ I will keep full attribution and follow the project's license.
 - 只接受 `SM-S9280` + `e3q` + `DZJ3` 固件；
 - 保留日志导出（`下载/GalaxyS24U-DZJ3/`）；
 - 带鸣谢/开源页面；
-- **仍是 debug 签名**，仅适合测试，公开前需要 release 签名和 ksud 授权确认。
+- **仍是 debug 签名**，仅适合测试，公开前需要 release 签名和 ksud 资产级确认。

@@ -10,7 +10,7 @@
 
 ## 这个仓库为什么没有 APK / ksud？
 
-- `ksud` KDP 二进制来源仓库没有明确 LICENSE，**不适合直接随源码再分发**；
+- 本源码仓库不分发 `ksud` 二进制；其来源已定位为 `BuSung-dev/Root-My-Galaxy-Payloads` 的 `kernelsu/ksud-e3q-S9280ZCS6DZF2-kdp`（仓库 Apache-2.0，SHA-256 `1b92611de62035263f129636270deb9002de42e1d2329460342856243975015b`）；
 - 预编译的 `libtimer_*.so`、`uhexec` 也不提交，改为从源码构建/自行获取；
 - 因此这里只发布**源码、定标数据、构建脚本**。
 
@@ -50,7 +50,7 @@ App 还需要以下文件，请从对应上游项目获取并放到 `app/src/mai
 - `uhexec`：UMH helper；
 - `umh_action.sh`：late-load 脚本（按你的 ksud 路径调整）。
 
-这些文件不在本仓库分发；请先确认其许可证/作者授权。
+这些文件不在本仓库分发；`ksud` 的来源/许可见 `THIRD_PARTY_NOTICES.md`。未来若随 APK 分发，需保留 Apache-2.0 NOTICE 并遵守 KernelSU GPL-3.0。
 
 ### 3. 构建 APK
 

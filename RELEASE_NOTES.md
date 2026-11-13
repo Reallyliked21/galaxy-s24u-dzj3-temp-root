@@ -18,7 +18,7 @@
 
 ## 不包含
 
-- `ksud` KDP 二进制（许可证不明确，需要用户自备或取得授权）
+- `ksud` KDP 二进制（本源码 release 不含；来源 RMG Payloads，Apache-2.0，见 THIRD_PARTY_NOTICES）
 - `uhexec`
 - 预编译 `libtimer_*.so`
 - APK / keystore / 签名产物
@@ -38,9 +38,11 @@
 ## 未验证
 
 - 其他机型/固件（DZJ1 已移除，不提供）；
-- 公开 APK 分发（等待 ksud 授权/替换 + release 签名）。
+- 公开 APK 分发（等待 RMG #462 资产级确认 + release 签名）。
 
 ## 许可与鸣谢
 
-整体 GPL-3.0；SamTimer MIT、Shizuku Apache-2.0 等上游声明见
+整体 GPL-3.0；SamTimer MIT、Shizuku Apache-2.0、RMG Payloads Apache-2.0 等上游声明见
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+`ksud` 资产：`ksud-e3q-S9280ZCS6DZF2-kdp`，4,879,856 B，SHA-256 `1b92611de62035263f129636270deb9002de42e1d2329460342856243975015b`，来自 https://github.com/BuSung-dev/Root-My-Galaxy-Payloads 。
