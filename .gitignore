@@ -1,0 +1,10 @@
+build/
+.gradle/
+local.properties
+signing/
+*.jks
+*.keystore
+app/src/main/assets/ksud*
+app/src/main/assets/uhexec
+app/src/main/jniLibs/
+app/build/
